@@ -1,0 +1,57 @@
+.nav-center{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-eve; */
+    position: relative;
+
+}
+
+.links, .social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+    font-size: 1.3rem;
+}
+
+.links li, .social-icons li{
+    list-style: none;
+}
+
+.links a, .social-icons a{
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons{
+    position: absolute;
+    right: 0;
+}
+
+.links{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+.show-links{
+    height: 10rem;
+}
+
+
+
+
+@media (min-width: 900px){
+.nav-toggle{
+    display: none; 
+}
+
+}
+
+
+@media (max-width: 900px){
+ .social-icons{
+    height: 0;
+    display: none;
+}
+
+} 
